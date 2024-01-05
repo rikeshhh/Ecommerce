@@ -1,0 +1,98 @@
+header{
+    display: flex;
+    flex-direction: column;
+}
+.sub{
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+h1{
+    position: relative;
+    z-index: 100;
+    font-weight: 800;
+    padding: 12px 10px;
+}
+h1::before{
+     content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 2px solid black;
+    top: 12px;
+    border-style: dotted; 
+    left: 6px; 
+}
+.nav__content   {
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 39px;
+
+}
+button{
+    background-color: transparent;
+    border: none;
+}
+form{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+input{
+    position: relative;
+    width: 336px;
+height: 39px;
+flex-shrink: 0;
+}
+form button{
+    position: absolute;
+    right: 0;
+}
+i{
+   font-size: 24px;
+   font-weight: 200;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 12px;
+}
+.sub__header{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+select::after {
+    content: ""; 
+    position: absolute;
+   
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+select:hover,
+select:focus {
+    border-color: #007BFF;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+select option {
+    padding: 10px;
+}
