@@ -1,12 +1,110 @@
 .hero-section{
+    padding: 24px 0px;
 display: flex;
 justify-content: space-between;
 }
-.hero-section :first-child{
+.sectionOne{
     width: 40%;
-    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
-.hero-section :last-child{
+.sectionTwo{
     width: 60%;
-    border: 2px solid black;
 }
+.slider {
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+  .slider .slider_wrapper {
+    position: relative;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .slider_wrapper .slide {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+  }
+  
+  .slide .slide_content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 888;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+  }
+  .slide .slide_content button {
+    padding: 20px 40px;
+    margin-top: 30px;
+    background-color: rgb(252, 40, 40);
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease-in;
+    font-family: Poppins;
+    font-size: 20px;
+  }
+  .slide .slide_content button:hover {
+    background-color: rgb(5, 2, 2);
+  }
+  .slide .slide_content h2{
+    font-size: 70px;
+      font-weight: bold;
+      color: #dfdfdf;
+      text-align: center;
+      letter-spacing: 5px;
+      text-shadow: 0 2px 2px #dfdfdf, 
+          -2px 5px 1px #cbcbcb,
+          -4px 8px 1px #979797, 
+          -6px 11px 1px #a2a2a2, 
+          -8px 14px 1px #aeaeae, 
+          -10px 17px 1px #b5b5b5, 
+          -12px 20px 1px #bebebe, 
+          -14px 23px 1px #cecece, 
+          -16px 26px 1px #dbdbdb, 
+          -18px 29px 1px #dfdfdf;
+    }
+  .slider .dots_wrapper {
+    z-index: 999;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  .dots_wrapper .dot {
+    color: rgb(24, 23, 23);
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .dots_wrapper .dot.active {
+    color: red;
+  }
+  .card{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+  }
+  .grab{
+    width: 380px;
+    height: 240px;
+    background-image: url('../../assets//banner-2.png');
+    border-radius: 9px;
+  }

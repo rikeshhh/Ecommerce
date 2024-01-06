@@ -1,6 +1,6 @@
 import React from 'react'
 import { SectionOne } from './SectionOne'
-import { SectionTwo } from './SectionTwo'
+import { SectionTwo } from './HeroSlider/SectionTwo'
 import './Herosection.css'
 export const Herosection = () => {
   return (
@@ -9,7 +9,6 @@ export const Herosection = () => {
     <SectionOne/>
         <SectionTwo/>
     </div>
-
     </section>
   )
 }
