@@ -5,6 +5,7 @@ import './App.css'
 import Header from './Component/Header/Header'
 import CombineHeader from './Component/Header/CombineHeader'
 import { Herosection } from './Component/Herosection/Herosection'
+import { Footer } from './Component/Footer/Footer'
 //https://api.escuelajs.co/api/v1/products
 function App() {
   const [count, setCount] = useState(0)
@@ -17,6 +18,9 @@ function App() {
     <main>
       <Herosection/>
     </main>
+    <footer>
+      <Footer/>
+    </footer>
     </>
   )
 }
